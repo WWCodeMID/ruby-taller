@@ -1,6 +1,7 @@
 # Las clases pueden ser extendidas.
-
 class Auto
+  attr_accessor :mover
+
   def initialize(marca = "Jeep")
     puts "Arrancando..."
     @marca = marca
@@ -13,10 +14,24 @@ end
 
 # El Simbolo < indica extensión de otra clase.
 class Audi < Auto
+  attr_accessor :marca
+
+  def initialize
+    @marca = 'Audi'
+  end
+
   def tipo
     "lujo"
   end
+
+  def mover
+    puts 'Acelerando...'
+  end
 end
+
+modeloA3 = Audi.new
+modeloA3.mover
+puts modeloA3.marca
 
 # Extendiendo la clase array de ruby
 class Array
