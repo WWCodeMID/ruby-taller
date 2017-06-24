@@ -21,6 +21,9 @@ frameworks = {
   perl:   'Dancer'
 }
 
+# Agregar nuevo elemento al Hash
+frameworks[:elixir] = 'Phoenix'
+
 frameworks.each { |lang, fw|
   puts "En #{lang} existe #{fw}"
 }
