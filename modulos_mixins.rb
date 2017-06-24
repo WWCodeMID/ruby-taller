@@ -21,7 +21,10 @@ module Perro
   end
 end
 
-#
+# Se crea una clase Mascota que implemente
+# todos los métodos anteriormente declarados
+# como si fuera una interface
+
 class Mascota
   include Gato
   include Perro
